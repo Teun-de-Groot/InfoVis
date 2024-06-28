@@ -1,7 +1,8 @@
 jupyter-book
-ipython3
+ipython
 matplotlib
 numpy
-pandas
+pandas==2.2.0
 plotly
 seaborn
+tqdm
