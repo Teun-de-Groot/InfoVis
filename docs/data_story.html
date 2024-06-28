@@ -424,11 +424,11 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <div class="cell tag_hide-input docutils container">
+  <div class="cell tag_hide-cell docutils container">
 <details class="hide above-input">
 <summary aria-label="Toggle hidden content">
-<span class="collapsed">Show code cell source</span>
-<span class="expanded">Hide code cell source</span>
+<span class="collapsed">Show code cell content</span>
+<span class="expanded">Hide code cell content</span>
 </summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>tqdm
@@ -436,14 +436,9 @@ document.write(`
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting tqdm
-  Using cached tqdm-4.66.4-py3-none-any.whl.metadata (57 kB)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: tqdm in c:\users\teunm\anaconda3\envs\jupyterbook\lib\site-packages (4.66.4)
 Requirement already satisfied: colorama in c:\users\teunm\anaconda3\envs\jupyterbook\lib\site-packages (from tqdm) (0.4.6)
-Using cached tqdm-4.66.4-py3-none-any.whl (78 kB)
-Installing collected packages: tqdm
-Successfully installed tqdm-4.66.4
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: nbclient in c:\users\teunm\anaconda3\envs\jupyterbook\lib\site-packages (0.10.0)
@@ -466,12 +461,13 @@ Requirement already satisfied: six&gt;=1.5 in c:\users\teunm\anaconda3\envs\jupy
 </pre></div>
 </div>
 </div>
+</details>
 </div>
-<div class="cell tag_hide-input docutils container">
+<div class="cell tag_hide-cell docutils container">
 <details class="hide above-input">
 <summary aria-label="Toggle hidden content">
-<span class="collapsed">Show code cell source</span>
-<span class="expanded">Hide code cell source</span>
+<span class="collapsed">Show code cell content</span>
+<span class="expanded">Hide code cell content</span>
 </summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -481,8 +477,8 @@ Requirement already satisfied: six&gt;=1.5 in c:\users\teunm\anaconda3\envs\jupy
 <span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
 <span class="kn">import</span> <span class="nn">plotly.graph_objects</span> <span class="k">as</span> <span class="nn">go</span>
 
-<span class="n">conv_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">InfoVis</span><span class="se">\\</span><span class="s2">docs</span><span class="se">\\</span><span class="s2">datasets</span><span class="se">\\</span><span class="s2">owid-covid-data.csv&quot;</span><span class="p">)</span>
-<span class="n">trade_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">InfoVis</span><span class="se">\\</span><span class="s2">docs</span><span class="se">\\</span><span class="s2">datasets</span><span class="se">\\</span><span class="s2">dataset-covid19-trade-impact.csv&quot;</span><span class="p">)</span>
+<span class="n">conv_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;datasets</span><span class="se">\\</span><span class="s2">owid-covid-data.csv&quot;</span><span class="p">)</span>
+<span class="n">trade_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;datasets</span><span class="se">\\</span><span class="s2">dataset-covid19-trade-impact.csv&quot;</span><span class="p">)</span>
 
 <span class="n">dates</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">trange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">trade_data</span><span class="p">[</span><span class="s1">&#39;Date&#39;</span><span class="p">])):</span>
@@ -493,82 +489,42 @@ Requirement already satisfied: six&gt;=1.5 in c:\users\teunm\anaconda3\envs\jupy
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">8</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
-<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="kn">import</span> <span class="nn">plotly.graph_objects</span> <span class="k">as</span> <span class="nn">go</span>
-<span class="ne">----&gt; </span><span class="mi">8</span> <span class="n">conv_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">InfoVis</span><span class="se">\\</span><span class="s2">docs</span><span class="se">\\</span><span class="s2">datasets</span><span class="se">\\</span><span class="s2">owid-covid-data.csv&quot;</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="n">trade_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">InfoVis</span><span class="se">\\</span><span class="s2">docs</span><span class="se">\\</span><span class="s2">datasets</span><span class="se">\\</span><span class="s2">dataset-covid19-trade-impact.csv&quot;</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">11</span> <span class="n">dates</span> <span class="o">=</span> <span class="p">[]</span>
-
-<span class="nn">File ~\anaconda3\envs\jupyterbook\lib\site-packages\pandas\io\parsers\readers.py:1026,</span> in <span class="ni">read_csv</span><span class="nt">(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, date_format, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options, dtype_backend)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1013</span> <span class="n">kwds_defaults</span> <span class="o">=</span> <span class="n">_refine_defaults_read</span><span class="p">(</span>
-<span class="g g-Whitespace">   </span><span class="mi">1014</span>     <span class="n">dialect</span><span class="p">,</span>
-<span class="g g-Whitespace">   </span><span class="mi">1015</span>     <span class="n">delimiter</span><span class="p">,</span>
-   <span class="p">(</span><span class="o">...</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1022</span>     <span class="n">dtype_backend</span><span class="o">=</span><span class="n">dtype_backend</span><span class="p">,</span>
-<span class="g g-Whitespace">   </span><span class="mi">1023</span> <span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1024</span> <span class="n">kwds</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">kwds_defaults</span><span class="p">)</span>
-<span class="ne">-&gt; </span><span class="mi">1026</span> <span class="k">return</span> <span class="n">_read</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="n">kwds</span><span class="p">)</span>
-
-<span class="nn">File ~\anaconda3\envs\jupyterbook\lib\site-packages\pandas\io\parsers\readers.py:620,</span> in <span class="ni">_read</span><span class="nt">(filepath_or_buffer, kwds)</span>
-<span class="g g-Whitespace">    </span><span class="mi">617</span> <span class="n">_validate_names</span><span class="p">(</span><span class="n">kwds</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;names&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">))</span>
-<span class="g g-Whitespace">    </span><span class="mi">619</span> <span class="c1"># Create the parser.</span>
-<span class="ne">--&gt; </span><span class="mi">620</span> <span class="n">parser</span> <span class="o">=</span> <span class="n">TextFileReader</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">622</span> <span class="k">if</span> <span class="n">chunksize</span> <span class="ow">or</span> <span class="n">iterator</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">623</span>     <span class="k">return</span> <span class="n">parser</span>
-
-<span class="nn">File ~\anaconda3\envs\jupyterbook\lib\site-packages\pandas\io\parsers\readers.py:1620,</span> in <span class="ni">TextFileReader.__init__</span><span class="nt">(self, f, engine, **kwds)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1617</span>     <span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">kwds</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span>
-<span class="g g-Whitespace">   </span><span class="mi">1619</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span><span class="p">:</span> <span class="n">IOHandles</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
-<span class="ne">-&gt; </span><span class="mi">1620</span> <span class="bp">self</span><span class="o">.</span><span class="n">_engine</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_engine</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">engine</span><span class="p">)</span>
-
-<span class="nn">File ~\anaconda3\envs\jupyterbook\lib\site-packages\pandas\io\parsers\readers.py:1880,</span> in <span class="ni">TextFileReader._make_engine</span><span class="nt">(self, f, engine)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1878</span>     <span class="k">if</span> <span class="s2">&quot;b&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">mode</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">1879</span>         <span class="n">mode</span> <span class="o">+=</span> <span class="s2">&quot;b&quot;</span>
-<span class="ne">-&gt; </span><span class="mi">1880</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="o">=</span> <span class="n">get_handle</span><span class="p">(</span>
-<span class="g g-Whitespace">   </span><span class="mi">1881</span>     <span class="n">f</span><span class="p">,</span>
-<span class="g g-Whitespace">   </span><span class="mi">1882</span>     <span class="n">mode</span><span class="p">,</span>
-<span class="g g-Whitespace">   </span><span class="mi">1883</span>     <span class="n">encoding</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;encoding&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
-<span class="g g-Whitespace">   </span><span class="mi">1884</span>     <span class="n">compression</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;compression&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
-<span class="g g-Whitespace">   </span><span class="mi">1885</span>     <span class="n">memory_map</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;memory_map&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-<span class="g g-Whitespace">   </span><span class="mi">1886</span>     <span class="n">is_text</span><span class="o">=</span><span class="n">is_text</span><span class="p">,</span>
-<span class="g g-Whitespace">   </span><span class="mi">1887</span>     <span class="n">errors</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;encoding_errors&quot;</span><span class="p">,</span> <span class="s2">&quot;strict&quot;</span><span class="p">),</span>
-<span class="g g-Whitespace">   </span><span class="mi">1888</span>     <span class="n">storage_options</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;storage_options&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
-<span class="g g-Whitespace">   </span><span class="mi">1889</span> <span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1890</span> <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
-<span class="g g-Whitespace">   </span><span class="mi">1891</span> <span class="n">f</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span><span class="o">.</span><span class="n">handle</span>
-
-<span class="nn">File ~\anaconda3\envs\jupyterbook\lib\site-packages\pandas\io\common.py:873,</span> in <span class="ni">get_handle</span><span class="nt">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
-<span class="g g-Whitespace">    </span><span class="mi">868</span> <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
-<span class="g g-Whitespace">    </span><span class="mi">869</span>     <span class="c1"># Check whether the filename is to be opened in binary mode.</span>
-<span class="g g-Whitespace">    </span><span class="mi">870</span>     <span class="c1"># Binary mode does not support &#39;encoding&#39; and &#39;newline&#39;.</span>
-<span class="g g-Whitespace">    </span><span class="mi">871</span>     <span class="k">if</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">encoding</span> <span class="ow">and</span> <span class="s2">&quot;b&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">872</span>         <span class="c1"># Encoding</span>
-<span class="ne">--&gt; </span><span class="mi">873</span>         <span class="n">handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">874</span>             <span class="n">handle</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">875</span>             <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">876</span>             <span class="n">encoding</span><span class="o">=</span><span class="n">ioargs</span><span class="o">.</span><span class="n">encoding</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">877</span>             <span class="n">errors</span><span class="o">=</span><span class="n">errors</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">878</span>             <span class="n">newline</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">879</span>         <span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">880</span>     <span class="k">else</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">881</span>         <span class="c1"># Binary mode</span>
-<span class="g g-Whitespace">    </span><span class="mi">882</span>         <span class="n">handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">)</span>
-
-<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;\\InfoVis\\docs\\datasets\\owid-covid-data.csv&#39;
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  0%|          | 0/111438 [00:00&lt;?, ?it/s]
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 14%|█▍        | 15893/111438 [00:00&lt;00:00, 157665.61it/s]
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 29%|██▉       | 32521/111438 [00:00&lt;00:00, 161993.28it/s]
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 44%|████▍     | 48992/111438 [00:00&lt;00:00, 162789.21it/s]
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 59%|█████▊    | 65272/111438 [00:00&lt;00:00, 162467.32it/s]
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 73%|███████▎  | 81519/111438 [00:00&lt;00:00, 161665.79it/s]
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 88%|████████▊ | 97686/111438 [00:00&lt;00:00, 161320.29it/s]
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>100%|██████████| 111438/111438 [00:00&lt;00:00, 161999.73it/s]
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </div>
+</details>
 </div>
-<div class="cell tag_hide-input docutils container">
+<div class="cell tag_hide-cell docutils container">
 <details class="hide above-input">
 <summary aria-label="Toggle hidden content">
-<span class="collapsed">Show code cell source</span>
-<span class="expanded">Hide code cell source</span>
+<span class="collapsed">Show code cell content</span>
+<span class="expanded">Hide code cell content</span>
 </summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">p</span> <span class="o">=</span> <span class="n">conv_data</span><span class="p">[[</span><span class="s1">&#39;date&#39;</span><span class="p">,</span><span class="s1">&#39;stringency_index&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;date&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
@@ -595,9 +551,8 @@ Requirement already satisfied: six&gt;=1.5 in c:\users\teunm\anaconda3\envs\jupy
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\teunm\AppData\Local\Temp\ipykernel_23364\2631551256.py:17: SettingWithCopyWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\teunm\AppData\Local\Temp\ipykernel_5940\2617959592.py:17: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame.
 Try using .loc[row_indexer,col_indexer] = value instead
 
@@ -606,6 +561,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </pre></div>
 </div>
 </div>
+</details>
 </div>
 <section class="tex2jax_ignore mathjax_ignore" id="the-impact-van-covid-19-op-de-wereldhandel">
 <h1>The impact van COVID-19 op de wereldhandel<a class="headerlink" href="#the-impact-van-covid-19-op-de-wereldhandel" title="Link to this heading">#</a></h1>
@@ -614,25 +570,7 @@ Doede Cerutti, 14948095<br />
 Teun de Groot, 14892499<br />
 Guido Chung, 15113248<br />
 Team number: F1</p>
-<div class="cell tag_hide-input docutils container">
-<details class="hide above-input">
-<summary aria-label="Toggle hidden content">
-<span class="collapsed">Show code cell source</span>
-<span class="expanded">Hide code cell source</span>
-</summary>
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">![](</span>/InfoVis/docs/images/image_boat.png<span class="o">)</span>
-</pre></div>
-</div>
-</div>
-</details>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;[]&#39; is not recognized as an internal or external command,
-operable program or batch file.
-</pre></div>
-</div>
-</div>
-</div>
+<p><img alt="image_boat" src="InfoVis/docs/images/image_boat.png" /></p>
 <section id="introductie">
 <h2>Introductie<a class="headerlink" href="#introductie" title="Link to this heading">#</a></h2>
 <p>De coronacrisis heeft een grote impact gehad op verschillende sectoren, zoals onderwijs, economie en gezondheidszorg. Deze situatie heeft ertoe geleid dat mensen zoveel mogelijk geïsoleerd moesten worden om de verspreiding van het virus te beperken.
@@ -683,30 +621,22 @@ Variable descriptions</p>
 </div>
 </details>
 <div class="cell_output docutils container">
-<img alt="../_images/1065212e345ac410de97e62732b4790f20ede1858ebaeadfedc72b04a54a29a7.png" src="../_images/1065212e345ac410de97e62732b4790f20ede1858ebaeadfedc72b04a54a29a7.png" />
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span> <span class="n">line</span> <span class="mi">3</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">p</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">p</span><span class="p">))</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">con</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">p</span><span class="p">,</span><span class="n">conv_data</span><span class="p">[[</span><span class="s1">&#39;total_vaccinations_per_hundred&#39;</span><span class="p">,</span> <span class="s1">&#39;total_cases&#39;</span><span class="p">,</span> <span class="s1">&#39;new_deaths_smoothed_per_million&#39;</span><span class="p">,</span><span class="s1">&#39;date&#39;</span><span class="p">]],</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;date&#39;</span><span class="p">)</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">con</span><span class="p">[[</span><span class="s1">&#39;stringency_index&#39;</span><span class="p">,</span><span class="s1">&#39;total_vaccinations_per_hundred&#39;</span><span class="p">,</span> <span class="s1">&#39;total_cases&#39;</span><span class="p">,</span> <span class="s1">&#39;new_deaths_smoothed_per_million&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">corr</span><span class="p">(),)</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="ne">NameError</span>: name &#39;sns&#39; is not defined
+</pre></div>
+</div>
 </div>
 </div>
 <p>We hebben ontdekt dat er een correlatie bestaat tussen vaccinaties en de totale hoeveelheid doden in de wereld. Wanneer de vaccinaties omhoog gaan, gaan de vaccinaties ook omhoog. Dit komt niet omdat vaccinaties doden veroorzaken. Maar omdat corona doden veroorzaakt en de vaccinatiegraad ook langzaam over tijd omhoog gaat. Hierdoor heb je een correlatie, maar geen causaliteit. Wanneer de vaccinatiegraad omhoog gaat, dan zijn er minder nieuwe doden, omdat er een zware negatieve correlatie is tussen de vaccinatiegraad en de hoeveelheid nieuwe doden.</p>
 <p>Verder vonden kijken we naar de stringency index, dit is een samengestelde maatstaf die de strengheid van overheidsmaatregelen in reactie op de COVID-19-pandemie kwantificeert. Deze index maakt deel uit van de Oxford COVID-19 Government Response Tracker (OxCGRT) en wordt berekend met de deze formule:</p>
-<div class="cell tag_hide-input docutils container">
-<details class="hide above-input">
-<summary aria-label="Toggle hidden content">
-<span class="collapsed">Show code cell source</span>
-<span class="expanded">Hide code cell source</span>
-</summary>
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">![](</span>/InfoVis/docs/images/image_index.png<span class="o">)</span>
-</pre></div>
-</div>
-</div>
-</details>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;[]&#39; is not recognized as an internal or external command,
-operable program or batch file.
-</pre></div>
-</div>
-</div>
-</div>
+<p><img alt="image_index" src="InfoVis/docs/images/image_index.png" /></p>
 <p>De index wordt berekend aan de hand van de volgende maatregelen:</p>
 <ul class="simple">
 <li><p>Sluiting van scholen</p></li>
@@ -734,26 +664,33 @@ In het kort, de hoeveelheid maatregelen die een overheid nam om de corona crisis
 </div>
 </div>
 </details>
-<div class="cell_output docutils container">
-</div>
 </div>
 </section>
 <section id="nieuwe-gevallen">
 <h3>Nieuwe gevallen<a class="headerlink" href="#nieuwe-gevallen" title="Link to this heading">#</a></h3>
 <p>Verder zouden we graag willen weten hoe de vaccinatiegraad de hoeveelheid corona gevallen beïnvloed.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">conv_data</span><span class="p">,</span> <span class="s1">&#39;total_vaccinations_per_hundred&#39;</span><span class="p">,</span><span class="s1">&#39;new_cases_smoothed_per_million&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;total_vaccinations_per_hundred vs new_cases_smoothed_per_million&#39;</span><span class="p">)</span>
 <span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-</div>
+</details>
 </div>
 <p>We vinden geen correlatie tussen de vaccinatiegraad en nieuwe gevallen van corona. Hierdoor kunnen we niet vaststellen dat een vaccinatie helpt bij het verminderen van de verspreiding van corona. Zoals wij het hier zien, heb je een vrij constante hoeveelheid mensen die ziek worden van het virus, ook al zien we wel wanneer de vaccinatiegraad hoger ligt dat er een stijging van nieuwe corona gevallen is. Hier hebben wij geen goede verklaring voor. Maar we kunnen speculeren dat dit een geval is van toeval. Verder is het ook belangrijk om dit te melden, want dan weten we in de toekomst wat een vaccinatie wel en niet bestrijdt.</p>
 <p>We kunnen deze 2 argumenten samen zetten en dan krijgen we de volgende figuur.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">d</span> <span class="o">=</span> <span class="n">conv_data</span><span class="p">[[</span><span class="s1">&#39;population&#39;</span><span class="p">,</span><span class="s1">&#39;total_cases&#39;</span><span class="p">,</span><span class="s1">&#39;total_deaths&#39;</span><span class="p">]]</span>
 
@@ -772,16 +709,7 @@ In het kort, de hoeveelheid maatregelen die een overheid nam om de corona crisis
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\teunm\AppData\Local\Temp\ipykernel_23364\626963958.py:3: SettingWithCopyWarning:
-
-
-A value is trying to be set on a copy of a slice from a DataFrame
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-</pre></div>
-</div>
-</div>
+</details>
 </div>
 <p>Hierin is te zien, dat een groot deel van de bevolking volgens onze data corona heeft gekregen. Dit kan komen omdat het in bepaalde delen van de wereld het moeilijk is om te bepalen hoeveel corona gevallen er daadwerkelijk aanwezig zijn. Wat we wel hieruit kunnen concluderen is dat er maar een kleine kans is om van corona dood te gaan. Dit is niet te zien in het figuurtje aangezien het percentage zo klein is.
 Het onderdeel “total deaths” heeft maar een grootte van 0.08%.</p>
@@ -793,7 +721,12 @@ Het onderdeel “total deaths” heeft maar een grootte van 0.08%.</p>
 <section id="handelsactiviteit">
 <h3>Handelsactiviteit<a class="headerlink" href="#handelsactiviteit" title="Link to this heading">#</a></h3>
 <p>In 2021 zien we een significante toename in het aantal vaccinaties. Dit valt samen met een herstellende trend in zowel de import- als exportwaarden, die in 2020 een dip vertonen. Deze gelijktijdige beweging suggereert een correlatie tussen het aantal vaccinaties en het herstel van de handelsactiviteiten.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">conv_data</span> <span class="o">=</span> <span class="n">conv_data</span><span class="p">[</span><span class="n">conv_data</span><span class="p">[</span><span class="s1">&#39;location&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;World&#39;</span><span class="p">]</span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">import_data</span><span class="p">,</span><span class="n">export_data</span><span class="p">])</span>
@@ -802,12 +735,15 @@ Het onderdeel “total deaths” heeft maar een grootte van 0.08%.</p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/4a0b5fc42a45ff57f9592c70b6cd6e8646b95a96f1331d4c2c7b8f2110250c10.png" src="../_images/4a0b5fc42a45ff57f9592c70b6cd6e8646b95a96f1331d4c2c7b8f2110250c10.png" />
-</div>
+</details>
 </div>
 <p>De stijging van het aantal vaccinaties zou hebben kunnen bijdragen aan het heropenen van economieën, wat mogelijk resulteerde in verhoogde economische activiteit. Dit herstel lijkt weerspiegeld te worden in de import- en exportsectoren, zoals te zien is in de grafiek. Naarmate de bevolking gevaccineerd werd, nam wellicht het vertrouwen van bedrijven en consumenten toe, wat mogelijk heeft bijgedragen aan een toename van de handelsactiviteiten.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;date&#39;</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">&#39;Value_smooth&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;Direction&#39;</span><span class="p">)</span>
 <span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span>
@@ -881,14 +817,18 @@ Het onderdeel “total deaths” heeft maar een grootte van 0.08%.</p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-</div>
+</details>
 </div>
 </section>
 <section id="overheidsmaatregelen">
 <h3>Overheidsmaatregelen<a class="headerlink" href="#overheidsmaatregelen" title="Link to this heading">#</a></h3>
 <p>Het is bekend dat beleidsmaatregelen zoals lockdowns en reisbeperkingen, gemeten door de Stringency Index, een aanzienlijke invloed hebben op internationale handelsstromen, waaronder import en export(Amador et al., 2023). Een analyse van de dataset toont een duidelijk verband tussen deze beleidsmaatregelen en schommelingen in import- en export waarden. De grafiek toont de import- en export waarden over de tijd, evenals de Global Stringency Index.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;date&#39;</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">&#39;Value_smooth&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;Direction&#39;</span><span class="p">)</span>
 <span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span>
@@ -962,8 +902,7 @@ Het onderdeel “total deaths” heeft maar een grootte van 0.08%.</p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-</div>
+</details>
 </div>
 <p>Tijdens periodes waarin de Stringency Index stijgt, wat wijst op strikte maatregelen zoals lockdowns, zien we een duidelijke daling in zowel import- als export waarden. Dit komt doordat strenge maatregelen leiden tot verstoringen in de toeleveringsketen. Bijvoorbeeld, tijdens de COVID-19-pandemie in 2020 en begin 2021, is er een duidelijke afname in handelsactiviteiten zichtbaar.
 Naarmate de Stringency Index daalt en maatregelen versoepelen, zien we een herstel in zowel import- als exportwaarden. Dit herstel weerspiegelt de hernieuwde economische activiteit en hervatting van internationale handel na het terugdraaien van overheidsinmenging.</p>
