@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>&lt;no title&gt; &#8212; JupyterBook InfoVis</title>
+    <title>The impact van COVID-19 op de wereldhandel &#8212; JupyterBook InfoVis</title>
   
   
   
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
@@ -169,7 +169,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1 current active">
                 <a class="reference internal" href="#">
-                    <no title>
+                    The impact van COVID-19 op de wereldhandel
                 </a>
             </li>
         </ul>
@@ -357,11 +357,32 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><no title></h1>
+    <h1>The impact van COVID-19 op de wereldhandel</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introductie">Introductie</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset-en-preprocessing">Dataset en Preprocessing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#de-invloed-van-vaccinaties-op-de-zorg-en-overheidsmaatregelen">De invloed van vaccinaties op de zorg en overheidsmaatregelen</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#doden-veroorzaakt-door-covid-19">Doden veroorzaakt door covid-19</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nieuwe-gevallen">Nieuwe gevallen</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#de-invloed-van-vaccinaties-op-de-economie">De invloed van vaccinaties op de economie</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#handelsactiviteit">Handelsactiviteit</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#overheidsmaatregelen">Overheidsmaatregelen</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#feedback-en-reflectie">Feedback en Reflectie</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#werkverdeling">Werkverdeling</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -371,16 +392,20 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <p>The impact van COVID-19 op de wereldhandel
-Jasper Wormsbecher, 14953110
-Doede Cerutti, 14948095
-Teun de Groot, 14892499
-Guido Chung, 15113248
+  <section class="tex2jax_ignore mathjax_ignore" id="the-impact-van-covid-19-op-de-wereldhandel">
+<h1>The impact van COVID-19 op de wereldhandel<a class="headerlink" href="#the-impact-van-covid-19-op-de-wereldhandel" title="Link to this heading">#</a></h1>
+<p>Jasper Wormsbecher, 14953110<br />
+Doede Cerutti, 14948095<br />
+Teun de Groot, 14892499<br />
+Guido Chung, 15113248<br />
 Team number: F1</p>
-<p>Introductie
-De coronacrisis heeft een grote impact gehad op verschillende sectoren, zoals onderwijs, economie en gezondheidszorg. Deze situatie heeft ertoe geleid dat mensen zoveel mogelijk geïsoleerd moesten worden om de verspreiding van het virus te beperken.
+<section id="introductie">
+<h2>Introductie<a class="headerlink" href="#introductie" title="Link to this heading">#</a></h2>
+<p>De coronacrisis heeft een grote impact gehad op verschillende sectoren, zoals onderwijs, economie en gezondheidszorg. Deze situatie heeft ertoe geleid dat mensen zoveel mogelijk geïsoleerd moesten worden om de verspreiding van het virus te beperken.
 De COVID-19 pandemie heeft de wereldhandel verstoord, wat gevolgen had voor import, export en economische stabiliteit in verschillende regio’s en sectoren. Dit project onderzoekt de impact van de pandemie op de handel door trends, verschuivingen en herstel te analyseren. We verkennen meerdere perspectieven om een uitgebreid inzicht te geven in hoe de pandemie de dynamiek van de wereldhandel heeft beïnvloed.</p>
-<p>Dataset en Preprocessing</p>
+</section>
+<section id="dataset-en-preprocessing">
+<h2>Dataset en Preprocessing<a class="headerlink" href="#dataset-en-preprocessing" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>Wereldhandelsdata (<a class="github reference external" href="https://github.com/farhansadeed/Python-COVID-19-Trade-Impact-Data-Analysis">farhansadeed/Python-COVID-19-Trade-Impact-Data-Analysis</a>)</p></li>
 <li><p>Covid-19 data (<a class="reference external" href="https://covid.ourworldindata.org/data/owid-covid-data.csv">https://covid.ourworldindata.org/data/owid-covid-data.csv</a>)</p></li>
@@ -390,78 +415,102 @@ De COVID-19 pandemie heeft de wereldhandel verstoord, wat gevolgen had voor impo
 <p>Hierna zijn de totaal 77 columns en samen 514232 rijen gereduceerd tot een dataset van 31 columns met 711 rijen. Voor sommige visualisaties worden de individuele datasets gebruikt.
 Variable descriptions</p>
 <p>Voor sommige visualisaties worden de individuele datasets gebruikt.
-De variabelen in de uiteindelijke dataset omvatten:</p>
-<p>Continuous / Ratio variables: total_cases, new_cases, new_cases_smoothed, total_deaths,new_deaths, new_deaths_smoothed, total_cases_per_million,new_cases_per_million, new_cases_smoothed_per_million,total_deaths_per_million, new_deaths_per_million,new_deaths_smoothed_per_million, total_vaccinations, people_vaccinated, people_fully_vaccinated,total_boosters, new_vaccinations, new_vaccinations_smoothed,total_vaccinations_per_hundred, people_vaccinated_per_hundred,people_fully_vaccinated_per_hundred, total_boosters_per_hundred,new_vaccinations_smoothed_per_million,new_people_vaccinated_smoothed,new_people_vaccinated_smoothed_per_hundred, Value_x, Cumulative_x, Value_y, Cumulative_y, reproduction_rate
-discrete / interval: ‘date’</p>
-<p>De variabelen in de covid-19 dataset variabele:
-discrete / nominal: iso_code, location
-discrete / interval: date
-continues / ratio: total_cases, new_cases, new_cases_smoothed, total_deaths, new_deaths, new_deaths_smoothed, total_cases_per_million, new_cases_per_million, new_cases_smoothed_per_million, total_deaths_per_million, new_deaths_per_million, new_deaths_smoothed_per_million, reproduction_rate, icu_patients, icu_patients_per_million, hosp_patients, hosp_patients_per_million, weekly_icu_admissions, weekly_icu_admissions_per_million, weekly_hosp_admissions, weekly_hosp_admissions_per_million, total_tests, new_tests, total_tests_per_thousand, new_tests_per_thousand,new_tests_smoothed, new_tests_smoothed_per_thousand, positive_rate, tests_per_case, tests_units, total_vaccinations, people_vaccinated, people_fully_vaccinated, total_boosters, new_vaccinations, new_vaccinations_smoothed, total_vaccinations_per_hundred, people_vaccinated_per_hundred, people_fully_vaccinated_per_hundred, total_boosters_per_hundred, new_vaccinations_smoothed_per_million, new_people_vaccinated_smoothed, new_people_vaccinated_smoothed_per_hundred, stringency_index, population_density, median_age, aged_65_older, aged_70_older, gdp_per_capita, extreme_poverty, cardiovasc_death_rate, diabetes_prevalence, female_smokers, male_smokers, handwashing_facilities, hospital_beds_per_thousand, life_expectancy, human_development_index, population, excess_mortality_cumulative_absolute, excess_mortality_cumulative, excess_mortality, excess_mortality_cumulative_per_million</p>
-<p>De variabelen in de economische dataset variabele:
-discrete / nominal: ‘Direction’
-discrete / interval: ‘date’
-continues / ratio: ‘Value’, ‘Cumulative’
-De invloed van vaccinaties op de zorg en overheidsmaatregelen
-Vaccinaties spelen een cruciale rol in de verbetering van de wereldgezondheid. Door het voorkomen van ernstige ziektes en het verminderen van de verspreiding van besmettelijke aandoeningen, dragen vaccinaties bij aan een algehele verbetering van de medische situatie wereldwijd.
-Doden veroorzaakt door covid-19
-Om te kunnen bepalen of de vaccinaties beter waren voor de wereld op medisch gebied moeten we eerst specificeren wat “goed” is. Hierbij gaan we analyseren of de vaccinaties ervoor gezorgd hebben dat er minder doden en totale gevallen waren.</p>
+<strong>De variabelen in de uiteindelijke dataset omvatten:</strong></p>
+<p><strong>Continuous / Ratio variables:</strong><br />
+total_cases, new_cases, new_cases_smoothed, total_deaths,new_deaths, new_deaths_smoothed, total_cases_per_million,new_cases_per_million, new_cases_smoothed_per_million,total_deaths_per_million, new_deaths_per_million,new_deaths_smoothed_per_million, total_vaccinations, people_vaccinated, people_fully_vaccinated,total_boosters, new_vaccinations, new_vaccinations_smoothed,total_vaccinations_per_hundred, people_vaccinated_per_hundred,people_fully_vaccinated_per_hundred, total_boosters_per_hundred,new_vaccinations_smoothed_per_million,new_people_vaccinated_smoothed,new_people_vaccinated_smoothed_per_hundred, Value_x, Cumulative_x, Value_y, Cumulative_y, reproduction_rate
+<strong>discrete / interval:</strong> ‘date’</p>
+<p><strong>De variabelen in de covid-19 dataset variabele:</strong></p>
+<p><strong>discrete / nominal:</strong> iso_code, location<br />
+<strong>discrete / interval:</strong> date<br />
+<strong>continues / ratio:</strong> total_cases, new_cases, new_cases_smoothed, total_deaths, new_deaths, new_deaths_smoothed, total_cases_per_million, new_cases_per_million, new_cases_smoothed_per_million, total_deaths_per_million, new_deaths_per_million, new_deaths_smoothed_per_million, reproduction_rate, icu_patients, icu_patients_per_million, hosp_patients, hosp_patients_per_million, weekly_icu_admissions, weekly_icu_admissions_per_million, weekly_hosp_admissions, weekly_hosp_admissions_per_million, total_tests, new_tests, total_tests_per_thousand, new_tests_per_thousand,new_tests_smoothed, new_tests_smoothed_per_thousand, positive_rate, tests_per_case, tests_units, total_vaccinations, people_vaccinated, people_fully_vaccinated, total_boosters, new_vaccinations, new_vaccinations_smoothed, total_vaccinations_per_hundred, people_vaccinated_per_hundred, people_fully_vaccinated_per_hundred, total_boosters_per_hundred, new_vaccinations_smoothed_per_million, new_people_vaccinated_smoothed, new_people_vaccinated_smoothed_per_hundred, stringency_index, population_density, median_age, aged_65_older, aged_70_older, gdp_per_capita, extreme_poverty, cardiovasc_death_rate, diabetes_prevalence, female_smokers, male_smokers, handwashing_facilities, hospital_beds_per_thousand, life_expectancy, human_development_index, population, excess_mortality_cumulative_absolute, excess_mortality_cumulative, excess_mortality, excess_mortality_cumulative_per_million</p>
+<p><strong>De variabelen in de economische dataset variabele:</strong></p>
+<p><strong>discrete / nominal:</strong> ‘Direction’<br />
+<strong>discrete / interval:</strong> ‘date’<br />
+<strong>continues / ratio:</strong> ‘Value’, ‘Cumulative’</p>
+</section>
+<section id="de-invloed-van-vaccinaties-op-de-zorg-en-overheidsmaatregelen">
+<h2>De invloed van vaccinaties op de zorg en overheidsmaatregelen<a class="headerlink" href="#de-invloed-van-vaccinaties-op-de-zorg-en-overheidsmaatregelen" title="Link to this heading">#</a></h2>
+<p>Vaccinaties spelen een cruciale rol in de verbetering van de wereldgezondheid. Door het voorkomen van ernstige ziektes en het verminderen van de verspreiding van besmettelijke aandoeningen, dragen vaccinaties bij aan een algehele verbetering van de medische situatie wereldwijd.</p>
+<section id="doden-veroorzaakt-door-covid-19">
+<h3>Doden veroorzaakt door covid-19<a class="headerlink" href="#doden-veroorzaakt-door-covid-19" title="Link to this heading">#</a></h3>
+<p>Om te kunnen bepalen of de vaccinaties beter waren voor de wereld op medisch gebied moeten we eerst specificeren wat “goed” is. Hierbij gaan we analyseren of de vaccinaties ervoor gezorgd hebben dat er minder doden en totale gevallen waren.</p>
 <p>We hebben ontdekt dat er een correlatie bestaat tussen vaccinaties en de totale hoeveelheid doden in de wereld. Wanneer de vaccinaties omhoog gaan, gaan de vaccinaties ook omhoog. Dit komt niet omdat vaccinaties doden veroorzaken. Maar omdat corona doden veroorzaakt en de vaccinatiegraad ook langzaam over tijd omhoog gaat. Hierdoor heb je een correlatie, maar geen causaliteit. Wanneer de vaccinatiegraad omhoog gaat, dan zijn er minder nieuwe doden, omdat er een zware negatieve correlatie is tussen de vaccinatiegraad en de hoeveelheid nieuwe doden.</p>
 <p>Verder vonden kijken we naar de stringency index, dit is een samengestelde maatstaf die de strengheid van overheidsmaatregelen in reactie op de COVID-19-pandemie kwantificeert. Deze index maakt deel uit van de Oxford COVID-19 Government Response Tracker (OxCGRT) en wordt berekend met de volgende formule:</p>
-<p>De index wordt berekend aan de hand van de volgende maatregelen:
-Sluiting van scholen
-Sluiting van werkplekken
-Annulering van publieke evenementen
-Beperkingen op bijeenkomsten
-Sluiting van openbaar vervoer
-Blijf-thuis voorschriften
-Beperkingen op interne verplaatsingen
-Internationale reisbeperkingen
-Publieke voorlichtingscampagnes
-De index varieert van 0 tot 100, waarbij hogere waarden een strengere overheidsreactie aangeven.
+<p>De index wordt berekend aan de hand van de volgende maatregelen:</p>
+<ul class="simple">
+<li><p>Sluiting van scholen</p></li>
+<li><p>Sluiting van werkplekken</p></li>
+<li><p>Annulering van publieke evenementen</p></li>
+<li><p>Beperkingen op bijeenkomsten</p></li>
+<li><p>Sluiting van openbaar vervoer</p></li>
+<li><p>Blijf-thuis voorschriften</p></li>
+<li><p>Beperkingen op interne verplaatsingen</p></li>
+<li><p>Internationale reisbeperkingen</p></li>
+<li><p>Publieke voorlichtingscampagnes</p></li>
+</ul>
+<p>De index varieert van 0 tot 100, waarbij hogere waarden een strengere overheidsreactie aangeven.
 In het kort, de hoeveelheid maatregelen die een overheid nam om de corona crisis te beteugelen. Hierdoor kunnen we het beleid van de overheden meenemen in de conclusie. We kunnen zeggen dat de vaccinatie 1 van de factoren is geweest die ervoor heeft gezorgd dat minder doden zijn gevallen, omdat tijd of natuurlijke blootstelling aan het virus ook een factor kan zijn.</p>
-<p>Nieuwe gevallen
-Verder zouden we graag willen weten hoe de vaccinatiegraad de hoeveelheid corona gevallen beïnvloed.
+</section>
+<section id="nieuwe-gevallen">
+<h3>Nieuwe gevallen<a class="headerlink" href="#nieuwe-gevallen" title="Link to this heading">#</a></h3>
+<p>Verder zouden we graag willen weten hoe de vaccinatiegraad de hoeveelheid corona gevallen beïnvloed.
 We vinden geen correlatie tussen de vaccinatiegraad en nieuwe gevallen van corona. Hierdoor kunnen we niet vaststellen dat een vaccinatie helpt bij het verminderen van de verspreiding van corona. Zoals wij het hier zien, heb je een vrij constante hoeveelheid mensen die ziek worden van het virus, ook al zien we wel wanneer de vaccinatiegraad hoger ligt dat er een stijging van nieuwe corona gevallen is. Hier hebben wij geen goede verklaring voor. Maar we kunnen speculeren dat dit een geval is van toeval. Verder is het ook belangrijk om dit te melden, want dan weten we in de toekomst wat een vaccinatie wel en niet bestrijdt.</p>
-<p>We kunnen deze 2 argumenten samen zetten en dan krijgen we de volgende figuur</p>
-<p>Hierin is te zien, dat een groot deel van de bevolking volgens onze data corona heeft gekregen. Dit kan komen omdat het in bepaalde delen van de wereld het moeilijk is om te bepalen hoeveel corona gevallen er daadwerkelijk aanwezig zijn. Wat we wel hieruit kunnen concluderen is dat er maar een kleine kans is om van corona dood te gaan. Dit is niet te zien in het figuurtje aangezien het percentage zo klein is. Het onderdeel “total deaths” heeft maar een grootte van 0.08%.
-De invloed van vaccinaties op de economie
-De invloed van vaccinaties op de economie is aanzienlijk en veelzijdig. Vaccinaties spelen een belangrijke rol in het bevorderen van economische stabiliteit en groei wereldwijd.
-Handelsactiviteit
-In 2021 zien we een significante toename in het aantal vaccinaties. Dit valt samen met een herstellende trend in zowel de import- als exportwaarden, die in 2020 een dip vertonen. Deze gelijktijdige beweging suggereert een correlatie tussen het aantal vaccinaties en het herstel van de handelsactiviteiten.</p>
+<p>We kunnen deze 2 argumenten samen zetten en dan krijgen we de volgende figuur.</p>
+<p>Hierin is te zien, dat een groot deel van de bevolking volgens onze data corona heeft gekregen. Dit kan komen omdat het in bepaalde delen van de wereld het moeilijk is om te bepalen hoeveel corona gevallen er daadwerkelijk aanwezig zijn. Wat we wel hieruit kunnen concluderen is dat er maar een kleine kans is om van corona dood te gaan. Dit is niet te zien in het figuurtje aangezien het percentage zo klein is.
+Het onderdeel “total deaths” heeft maar een grootte van 0.08%.</p>
+</section>
+</section>
+<section id="de-invloed-van-vaccinaties-op-de-economie">
+<h2>De invloed van vaccinaties op de economie<a class="headerlink" href="#de-invloed-van-vaccinaties-op-de-economie" title="Link to this heading">#</a></h2>
+<p>De invloed van vaccinaties op de economie is aanzienlijk en veelzijdig. Vaccinaties spelen een belangrijke rol in het bevorderen van economische stabiliteit en groei wereldwijd.</p>
+<section id="handelsactiviteit">
+<h3>Handelsactiviteit<a class="headerlink" href="#handelsactiviteit" title="Link to this heading">#</a></h3>
+<p>In 2021 zien we een significante toename in het aantal vaccinaties. Dit valt samen met een herstellende trend in zowel de import- als exportwaarden, die in 2020 een dip vertonen. Deze gelijktijdige beweging suggereert een correlatie tussen het aantal vaccinaties en het herstel van de handelsactiviteiten.</p>
 <p>De stijging van het aantal vaccinaties zou hebben kunnen bijdragen aan het heropenen van economieën, wat mogelijk resulteerde in verhoogde economische activiteit. Dit herstel lijkt weerspiegeld te worden in de import- en exportsectoren, zoals te zien is in de grafiek. Naarmate de bevolking gevaccineerd werd, nam wellicht het vertrouwen van bedrijven en consumenten toe, wat mogelijk heeft bijgedragen aan een toename van de handelsactiviteiten.</p>
-<p>Overheidsmaatregelen
-Het is bekend (Amador et al., 2023) dat beleidsmaatregelen zoals lockdowns en reisbeperkingen, gemeten door de Stringency Index, een aanzienlijke invloed hebben op internationale handelsstromen, waaronder import en export. Een analyse van de dataset toont een duidelijk verband tussen deze beleidsmaatregelen en schommelingen in import- en export waarden. De grafiek toont de import- en export waarden over de tijd, evenals de Global Stringency Index.</p>
+</section>
+<section id="overheidsmaatregelen">
+<h3>Overheidsmaatregelen<a class="headerlink" href="#overheidsmaatregelen" title="Link to this heading">#</a></h3>
+<p>Het is bekend dat beleidsmaatregelen zoals lockdowns en reisbeperkingen, gemeten door de Stringency Index, een aanzienlijke invloed hebben op internationale handelsstromen, waaronder import en export(Amador et al., 2023). Een analyse van de dataset toont een duidelijk verband tussen deze beleidsmaatregelen en schommelingen in import- en export waarden. De grafiek toont de import- en export waarden over de tijd, evenals de Global Stringency Index.</p>
 <p>Tijdens periodes waarin de Stringency Index stijgt, wat wijst op strikte maatregelen zoals lockdowns, zien we een duidelijke daling in zowel import- als export waarden. Dit komt doordat strenge maatregelen leiden tot verstoringen in de toeleveringsketen. Bijvoorbeeld, tijdens de COVID-19-pandemie in 2020 en begin 2021, is er een duidelijke afname in handelsactiviteiten zichtbaar.
-Naarmate de Stringency Index daalt en maatregelen versoepelen, zien we een herstel in zowel import- als exportwaarden. Dit herstel weerspiegelt de hernieuwde economische activiteit en hervatting van internationale handel na het terugdraaien van overheidsinmenging.
-Feedback en Reflectie
-Op 25 juni 2024 is onze groep bijeengekomen op Science Park voor het feedbackmoment. Hier zijn een aantal zwakke punten van het project aangekaart.</p>
-<p>Ten tijde van het feedbackmoment maakten we nog enkel gebruik van lijngrafieken, het advies was dan ook meer verschillende soorten grafieken te gebruiken. Hierdoor komt de boodschap die we over willen brengen met de data beter tot zijn recht.
-Alle grafieken waar we gebruik van maakten hadden variabelen op de y-as en tijd op de x-as. Het advies was andere variabelen dan enkel de tijd op de x-as te gebruiken.
-Twee plots die los van elkaar staan en beiden tijd op de x-as hebben, kunnen niet zomaar met elkaar vergeleken worden. Oftewel voorzichtiger taalgebruik; plots geven enkel correlaties weer. We concludeerden bijvoorbeeld dat er een causaal verband is tussen een hogere vaccinatiegraad en een kleinere stringency index hoewel dit enkel correlatie is.
-Een van de grafieken waar we gebruik van maakten gaf cumulatief de covid-19 cases van elk land in de wereld apart weer, met een dikkere lijn om de gemiddelde trend aan te geven. Dit was erg onoverzichtelijk.</p>
+Naarmate de Stringency Index daalt en maatregelen versoepelen, zien we een herstel in zowel import- als exportwaarden. Dit herstel weerspiegelt de hernieuwde economische activiteit en hervatting van internationale handel na het terugdraaien van overheidsinmenging.</p>
+</section>
+</section>
+<section id="feedback-en-reflectie">
+<h2>Feedback en Reflectie<a class="headerlink" href="#feedback-en-reflectie" title="Link to this heading">#</a></h2>
+<p>Op 25 juni 2024 is onze groep bijeengekomen op Science Park voor het feedbackmoment. Hier zijn een aantal zwakke punten van het project aangekaart.</p>
+<ul class="simple">
+<li><p>Ten tijde van het feedbackmoment maakten we nog enkel gebruik van lijngrafieken, het advies was dan ook meer verschillende soorten grafieken te gebruiken. Hierdoor komt de boodschap die we over willen brengen met de data beter tot zijn recht.</p></li>
+<li><p>Alle grafieken waar we gebruik van maakten hadden variabelen op de y-as en tijd op de x-as. Het advies was andere variabelen dan enkel de tijd op de x-as te gebruiken.</p></li>
+<li><p>Twee plots die los van elkaar staan en beiden tijd op de x-as hebben, kunnen niet zomaar met elkaar vergeleken worden. Oftewel voorzichtiger taalgebruik; plots geven enkel correlaties weer. We concludeerden bijvoorbeeld dat er een causaal verband is tussen een hogere vaccinatiegraad en een kleinere stringency index hoewel dit enkel correlatie is.</p></li>
+<li><p>Een van de grafieken waar we gebruik van maakten gaf cumulatief de covid-19 cases van elk land in de wereld apart weer, met een dikkere lijn om de gemiddelde trend aan te geven. Dit was erg onoverzichtelijk.</p></li>
+</ul>
 <p>Reflecterend op het verloop van het project zijn er twee dingen waar we op vastliepen.</p>
 <p>Ten eerste hebben we erg geworsteld met het vinden van een goed onderwerp. Dit is het gevolg van gebrekkig onderzoek naar correlaties tussen de datasets waar we destijds gebruik van maakten. Om deze reden gaat onze final delivery over een ander onderwerp dan onze proposal.</p>
 <p>Het tweede punt is dat we erg inefficiënt hebben gewerkt in verband met miscommunicatie. Meerdere keren is het voorgekomen dat men dubbel werk heeft verricht, zoals het zoeken naar correlaties of het maken van plots.</p>
-<p>Werkverdeling
-Guido
+</section>
+<section id="werkverdeling">
+<h2>Werkverdeling<a class="headerlink" href="#werkverdeling" title="Link to this heading">#</a></h2>
+<p><strong>Guido</strong><br />
 Guido heeft ervoor gezorgd dat de teksten goed leesbaar zijn. Verder heeft hij een van de perspectieven, de samenvatting en het stuk over de dataset en de preprocessing geschreven. Ook heeft hij aan de introductie gewerkt.</p>
-<p>Jasper
+<p><strong>Jasper</strong><br />
 Jasper heeft het grootste deel van het coderen gedaan, zoals preprocessing, het vinden van correlaties en het maken van de plots waar gebruik van is gemaakt in de definitieve versie van het project. Verder heeft hij het verhaal rondom de data en plots in goede banen geleid en de introductie met Guido geschreven. Ook heeft hij het project gepresenteerd tijdens het feedbackmoment. Jasper hield de planning bij en had goed overzicht over de te verdelen taken.</p>
-<p>Doede
+<p><strong>Doede</strong><br />
 Doede heeft een grootste deel van de argumenten uitgewerkt en geholpen bij het bedenken van plots die deze argumenten ondersteunen. Ook heeft hij de feedback bijgehouden.
 Doede heeft net als Jasper gewerkt aan het vinden van correlaties en het maken van plots, dit is onderdeel van het dubbele werk dat genoemd wordt in de reflectie.</p>
-<p>Teun
+<p><strong>Teun</strong><br />
 Teun heeft aan de argumenten en de globale verhaallijn gewerkt. Verder heeft hij het stukje feedback en reflectie en deze work distribution geschreven.
 Teun heeft net als Doede feedback bijgehouden tijdens het feedbackmoment en aan het begin van het project dubbel werk verricht met betrekking tot het zoeken naar correlaties en het maken van plots.</p>
-<p>Samenvatting
+<p><strong>Samenvatting</strong><br />
 De corona pandemie heeft wereldwijd een aanzienlijke invloed gehad op zowel de sociale als de economische sectoren. Om deze impact te meten, is er veel data verzameld en in ons onderzoek hebben we ons gericht op vaccinaties, import/export en de stringency index. Uit onze analyse bleek dat vaccinaties mogelijk hebben bijgedragen aan herstel op zowel medisch als economisch gebied. Hoewel er geen direct verband werd gevonden tussen de vaccinatiegraad en het aantal nieuwe corona gevallen, was er economisch herstel zichtbaar in de import- en exportwaarden naarmate de vaccinatiegraad toenam en de overheidsmaatregelen versoepelden. Verdere studie is echter nodig om deze bevindingen te bevestigen en om een dieper inzicht te krijgen in de complexiteit van de relatie tussen vaccinaties, economische activiteit en beleidsmaatregelen gedurende de pandemie.</p>
-<p>Bronnen
-Centraal Bureau voor de Statistiek. (2023). More strikes but fewer strikers in 2022. Statistics Netherlands. <a class="reference external" href="https://www.cbs.nl/en-gb/news/2023/18/more-strikes-but-fewer-strikers-in-2022">https://www.cbs.nl/en-gb/news/2023/18/more-strikes-but-fewer-strikers-in-2022</a>
-<a class="reference external" href="https://www.ecdc.europa.eu/en/covid-19/vaccines-roll-out">https://www.ecdc.europa.eu/en/covid-19/vaccines-roll-out</a></p>
+<p><strong>Bronnen</strong></p>
+<p>Centraal Bureau voor de Statistiek. (2023). More strikes but fewer strikers in 2022. Statistics Netherlands. <a class="reference external" href="https://www.cbs.nl/en-gb/news/2023/18/more-strikes-but-fewer-strikers-in-2022">https://www.cbs.nl/en-gb/news/2023/18/more-strikes-but-fewer-strikers-in-2022</a></p>
+<p><a class="reference external" href="https://www.ecdc.europa.eu/en/covid-19/vaccines-roll-out">https://www.ecdc.europa.eu/en/covid-19/vaccines-roll-out</a></p>
 <p>COVID-19 vaccination. (z.d.). RIVM. <a class="reference external" href="https://www.rivm.nl/en/covid-19-vaccination">https://www.rivm.nl/en/covid-19-vaccination</a></p>
 <p>Amador, J., Gouveia, C. M., &amp; Pimenta, A. C. (2023). COVID-19, lockdowns and international trade: evidence from firm-level data. Empirical Economics, 65(5), 2427–2466. <a class="reference external" href="https://doi.org/10.1007/s00181-023-02421-x">https://doi.org/10.1007/s00181-023-02421-x</a></p>
+</section>
 <div class="toctree-wrapper compound">
 </div>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -509,6 +558,34 @@ Centraal Bureau voor de Statistiek. (2023). More strikes but fewer strikers in 2
             
             
               
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introductie">Introductie</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset-en-preprocessing">Dataset en Preprocessing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#de-invloed-van-vaccinaties-op-de-zorg-en-overheidsmaatregelen">De invloed van vaccinaties op de zorg en overheidsmaatregelen</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#doden-veroorzaakt-door-covid-19">Doden veroorzaakt door covid-19</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nieuwe-gevallen">Nieuwe gevallen</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#de-invloed-van-vaccinaties-op-de-economie">De invloed van vaccinaties op de economie</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#handelsactiviteit">Handelsactiviteit</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#overheidsmaatregelen">Overheidsmaatregelen</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#feedback-en-reflectie">Feedback en Reflectie</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#werkverdeling">Werkverdeling</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
             
           </div>
           <footer class="bd-footer-content">
@@ -518,7 +595,7 @@ Centraal Bureau voor de Statistiek. (2023). More strikes but fewer strikers in 2
   <div class="footer-item">
     
 <p class="component-author">
-By Jasper, Teun, Doede, Guido
+By Jasper, Teun, Doede en Guido
 </p>
 
   </div>
