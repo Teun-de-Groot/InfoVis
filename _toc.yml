@@ -4,5 +4,3 @@
 format: jb-book
 root: docs/data_story.ipynb
 
-chapters:
-- file: docs/data_story.ipynb
