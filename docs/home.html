@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
@@ -61,7 +61,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="notebook.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -381,6 +380,8 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#feedback-en-reflectie">Feedback en Reflectie</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#werkverdeling">Werkverdeling</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#samenvatting">Samenvatting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bronnen">Bronnen</a></li>
 </ul>
             </nav>
         </div>
@@ -414,10 +415,9 @@ De COVID-19 pandemie heeft de wereldhandel verstoord, wat gevolgen had voor impo
 <p>Om de gegevens op te schonen, hebben we kolommen hernoemd en geherstructureerd voor samenvoeging. We hebben de kolommen handmatig geïnspecteerd en samengevoegd op basis van overeenkomende namen of inhoud. Tijdens dit proces hebben we meteen de niet-relevante kolommen verwijderd.</p>
 <p>Hierna zijn de totaal 77 columns en samen 514232 rijen gereduceerd tot een dataset van 31 columns met 711 rijen. Voor sommige visualisaties worden de individuele datasets gebruikt.
 Variable descriptions</p>
-<p>Voor sommige visualisaties worden de individuele datasets gebruikt.
+<p>Voor sommige visualisaties worden de individuele datasets gebruikt.<br />
 <strong>De variabelen in de uiteindelijke dataset omvatten:</strong></p>
-<p><strong>Continuous / Ratio variables:</strong><br />
-total_cases, new_cases, new_cases_smoothed, total_deaths,new_deaths, new_deaths_smoothed, total_cases_per_million,new_cases_per_million, new_cases_smoothed_per_million,total_deaths_per_million, new_deaths_per_million,new_deaths_smoothed_per_million, total_vaccinations, people_vaccinated, people_fully_vaccinated,total_boosters, new_vaccinations, new_vaccinations_smoothed,total_vaccinations_per_hundred, people_vaccinated_per_hundred,people_fully_vaccinated_per_hundred, total_boosters_per_hundred,new_vaccinations_smoothed_per_million,new_people_vaccinated_smoothed,new_people_vaccinated_smoothed_per_hundred, Value_x, Cumulative_x, Value_y, Cumulative_y, reproduction_rate
+<p><strong>Continuous / Ratio variables:</strong> total_cases, new_cases, new_cases_smoothed, total_deaths,new_deaths, new_deaths_smoothed, total_cases_per_million,new_cases_per_million, new_cases_smoothed_per_million,total_deaths_per_million, new_deaths_per_million,new_deaths_smoothed_per_million, total_vaccinations, people_vaccinated, people_fully_vaccinated,total_boosters, new_vaccinations, new_vaccinations_smoothed,total_vaccinations_per_hundred, people_vaccinated_per_hundred,people_fully_vaccinated_per_hundred, total_boosters_per_hundred,new_vaccinations_smoothed_per_million,new_people_vaccinated_smoothed,new_people_vaccinated_smoothed_per_hundred, Value_x, Cumulative_x, Value_y, Cumulative_y, reproduction_rate<br />
 <strong>discrete / interval:</strong> ‘date’</p>
 <p><strong>De variabelen in de covid-19 dataset variabele:</strong></p>
 <p><strong>discrete / nominal:</strong> iso_code, location<br />
@@ -500,13 +500,19 @@ Doede heeft net als Jasper gewerkt aan het vinden van correlaties en het maken v
 <p><strong>Teun</strong><br />
 Teun heeft aan de argumenten en de globale verhaallijn gewerkt. Verder heeft hij het stukje feedback en reflectie en deze work distribution geschreven.
 Teun heeft net als Doede feedback bijgehouden tijdens het feedbackmoment en aan het begin van het project dubbel werk verricht met betrekking tot het zoeken naar correlaties en het maken van plots.</p>
-<p><strong>Samenvatting</strong><br />
-De corona pandemie heeft wereldwijd een aanzienlijke invloed gehad op zowel de sociale als de economische sectoren. Om deze impact te meten, is er veel data verzameld en in ons onderzoek hebben we ons gericht op vaccinaties, import/export en de stringency index. Uit onze analyse bleek dat vaccinaties mogelijk hebben bijgedragen aan herstel op zowel medisch als economisch gebied. Hoewel er geen direct verband werd gevonden tussen de vaccinatiegraad en het aantal nieuwe corona gevallen, was er economisch herstel zichtbaar in de import- en exportwaarden naarmate de vaccinatiegraad toenam en de overheidsmaatregelen versoepelden. Verdere studie is echter nodig om deze bevindingen te bevestigen en om een dieper inzicht te krijgen in de complexiteit van de relatie tussen vaccinaties, economische activiteit en beleidsmaatregelen gedurende de pandemie.</p>
-<p><strong>Bronnen</strong></p>
-<p>Centraal Bureau voor de Statistiek. (2023). More strikes but fewer strikers in 2022. Statistics Netherlands. <a class="reference external" href="https://www.cbs.nl/en-gb/news/2023/18/more-strikes-but-fewer-strikers-in-2022">https://www.cbs.nl/en-gb/news/2023/18/more-strikes-but-fewer-strikers-in-2022</a></p>
-<p><a class="reference external" href="https://www.ecdc.europa.eu/en/covid-19/vaccines-roll-out">https://www.ecdc.europa.eu/en/covid-19/vaccines-roll-out</a></p>
-<p>COVID-19 vaccination. (z.d.). RIVM. <a class="reference external" href="https://www.rivm.nl/en/covid-19-vaccination">https://www.rivm.nl/en/covid-19-vaccination</a></p>
+</section>
+<section id="samenvatting">
+<h2>Samenvatting<a class="headerlink" href="#samenvatting" title="Link to this heading">#</a></h2>
+<p>De corona pandemie heeft wereldwijd een aanzienlijke invloed gehad op zowel de sociale als de economische sectoren. Om deze impact te meten, is er veel data verzameld en in ons onderzoek hebben we ons gericht op vaccinaties, import/export en de stringency index. Uit onze analyse bleek dat vaccinaties mogelijk hebben bijgedragen aan herstel op zowel medisch als economisch gebied. Hoewel er geen direct verband werd gevonden tussen de vaccinatiegraad en het aantal nieuwe corona gevallen, was er economisch herstel zichtbaar in de import- en exportwaarden naarmate de vaccinatiegraad toenam en de overheidsmaatregelen versoepelden. Verdere studie is echter nodig om deze bevindingen te bevestigen en om een dieper inzicht te krijgen in de complexiteit van de relatie tussen vaccinaties, economische activiteit en beleidsmaatregelen gedurende de pandemie.</p>
+</section>
+<section id="bronnen">
+<h2>Bronnen<a class="headerlink" href="#bronnen" title="Link to this heading">#</a></h2>
+<p>Our World in Data. (2024). COVID-19 Data [Data set]. Our World in Data. <a class="reference external" href="https://covid.ourworldindata.org/data/owid-covid-data.csv">https://covid.ourworldindata.org/data/owid-covid-data.csv</a></p>
 <p>Amador, J., Gouveia, C. M., &amp; Pimenta, A. C. (2023). COVID-19, lockdowns and international trade: evidence from firm-level data. Empirical Economics, 65(5), 2427–2466. <a class="reference external" href="https://doi.org/10.1007/s00181-023-02421-x">https://doi.org/10.1007/s00181-023-02421-x</a></p>
+<p>COVID-19. (2023, 5 juni). European Centre For Disease Prevention And Control. <a class="reference external" href="https://www.ecdc.europa.eu/en/covid-19">https://www.ecdc.europa.eu/en/covid-19</a></p>
+<p>COVID-19 vaccination. (z.d.). RIVM. <a class="reference external" href="https://www.rivm.nl/en/covid-19-vaccination">https://www.rivm.nl/en/covid-19-vaccination</a></p>
+<p>Farhansadeed. (z.d.). GitHub - farhansadeed/Python-COVID-19-Trade-Impact-Data-Analysis: This repository contains an analysis of the effects of COVID-19 on trade trends up to December 2021. The dataset used provides daily trade values. We identified annual trends, commodity impacts, transport mode influences, and country-specific effects by using Python, Pandas and Matplotlib. GitHub. <a class="github reference external" href="https://github.com/farhansadeed/Python-COVID-19-Trade-Impact-Data-Analysis">farhansadeed/Python-COVID-19-Trade-Impact-Data-Analysis</a></p>
+<p>Netherlands, S. (2023, 3 mei). More strikes but fewer strikers in 2022. Statistics Netherlands. <a class="reference external" href="https://www.cbs.nl/en-gb/news/2023/18/more-strikes-but-fewer-strikers-in-2022">https://www.cbs.nl/en-gb/news/2023/18/more-strikes-but-fewer-strikers-in-2022</a></p>
 </section>
 <div class="toctree-wrapper compound">
 </div>
@@ -542,15 +548,6 @@ De corona pandemie heeft wereldwijd een aanzienlijke invloed gehad op zowel de s
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="right-next"
-       href="notebook.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
@@ -581,6 +578,8 @@ De corona pandemie heeft wereldwijd een aanzienlijke invloed gehad op zowel de s
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#feedback-en-reflectie">Feedback en Reflectie</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#werkverdeling">Werkverdeling</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#samenvatting">Samenvatting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bronnen">Bronnen</a></li>
 </ul>
   </nav></div>
 
