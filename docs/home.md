@@ -24,11 +24,10 @@ Om de gegevens op te schonen, hebben we kolommen hernoemd en geherstructureerd v
 Hierna zijn de totaal 77 columns en samen 514232 rijen gereduceerd tot een dataset van 31 columns met 711 rijen. Voor sommige visualisaties worden de individuele datasets gebruikt.
 Variable descriptions
 
-Voor sommige visualisaties worden de individuele datasets gebruikt. 
+Voor sommige visualisaties worden de individuele datasets gebruikt.  
 **De variabelen in de uiteindelijke dataset omvatten:**  
 
-**Continuous / Ratio variables:**  
-total_cases, new_cases, new_cases_smoothed, total_deaths,new_deaths, new_deaths_smoothed, total_cases_per_million,new_cases_per_million, new_cases_smoothed_per_million,total_deaths_per_million, new_deaths_per_million,new_deaths_smoothed_per_million, total_vaccinations, people_vaccinated, people_fully_vaccinated,total_boosters, new_vaccinations, new_vaccinations_smoothed,total_vaccinations_per_hundred, people_vaccinated_per_hundred,people_fully_vaccinated_per_hundred, total_boosters_per_hundred,new_vaccinations_smoothed_per_million,new_people_vaccinated_smoothed,new_people_vaccinated_smoothed_per_hundred, Value_x, Cumulative_x, Value_y, Cumulative_y, reproduction_rate
+**Continuous / Ratio variables:** total_cases, new_cases, new_cases_smoothed, total_deaths,new_deaths, new_deaths_smoothed, total_cases_per_million,new_cases_per_million, new_cases_smoothed_per_million,total_deaths_per_million, new_deaths_per_million,new_deaths_smoothed_per_million, total_vaccinations, people_vaccinated, people_fully_vaccinated,total_boosters, new_vaccinations, new_vaccinations_smoothed,total_vaccinations_per_hundred, people_vaccinated_per_hundred,people_fully_vaccinated_per_hundred, total_boosters_per_hundred,new_vaccinations_smoothed_per_million,new_people_vaccinated_smoothed,new_people_vaccinated_smoothed_per_hundred, Value_x, Cumulative_x, Value_y, Cumulative_y, reproduction_rate  
 **discrete / interval:** ‘date’  
 
 **De variabelen in de covid-19 dataset variabele:**  
@@ -128,15 +127,19 @@ Doede heeft net als Jasper gewerkt aan het vinden van correlaties en het maken v
 Teun heeft aan de argumenten en de globale verhaallijn gewerkt. Verder heeft hij het stukje feedback en reflectie en deze work distribution geschreven.
 Teun heeft net als Doede feedback bijgehouden tijdens het feedbackmoment en aan het begin van het project dubbel werk verricht met betrekking tot het zoeken naar correlaties en het maken van plots.  
 
-**Samenvatting**  
+## Samenvatting  
 De corona pandemie heeft wereldwijd een aanzienlijke invloed gehad op zowel de sociale als de economische sectoren. Om deze impact te meten, is er veel data verzameld en in ons onderzoek hebben we ons gericht op vaccinaties, import/export en de stringency index. Uit onze analyse bleek dat vaccinaties mogelijk hebben bijgedragen aan herstel op zowel medisch als economisch gebied. Hoewel er geen direct verband werd gevonden tussen de vaccinatiegraad en het aantal nieuwe corona gevallen, was er economisch herstel zichtbaar in de import- en exportwaarden naarmate de vaccinatiegraad toenam en de overheidsmaatregelen versoepelden. Verdere studie is echter nodig om deze bevindingen te bevestigen en om een dieper inzicht te krijgen in de complexiteit van de relatie tussen vaccinaties, economische activiteit en beleidsmaatregelen gedurende de pandemie.  
 
-**Bronnen**  
+## Bronnen  
 
-Centraal Bureau voor de Statistiek. (2023). More strikes but fewer strikers in 2022. Statistics Netherlands. https://www.cbs.nl/en-gb/news/2023/18/more-strikes-but-fewer-strikers-in-2022  
+Our World in Data. (2024). COVID-19 Data [Data set]. Our World in Data. https://covid.ourworldindata.org/data/owid-covid-data.csv  
 
-https://www.ecdc.europa.eu/en/covid-19/vaccines-roll-out  
+Amador, J., Gouveia, C. M., & Pimenta, A. C. (2023). COVID-19, lockdowns and international trade: evidence from firm-level data. Empirical Economics, 65(5), 2427–2466. https://doi.org/10.1007/s00181-023-02421-x  
+
+COVID-19. (2023, 5 juni). European Centre For Disease Prevention And Control. https://www.ecdc.europa.eu/en/covid-19  
 
 COVID-19 vaccination. (z.d.). RIVM. https://www.rivm.nl/en/covid-19-vaccination  
 
-Amador, J., Gouveia, C. M., & Pimenta, A. C. (2023). COVID-19, lockdowns and international trade: evidence from firm-level data. Empirical Economics, 65(5), 2427–2466. https://doi.org/10.1007/s00181-023-02421-x  
+Farhansadeed. (z.d.). GitHub - farhansadeed/Python-COVID-19-Trade-Impact-Data-Analysis: This repository contains an analysis of the effects of COVID-19 on trade trends up to December 2021. The dataset used provides daily trade values. We identified annual trends, commodity impacts, transport mode influences, and country-specific effects by using Python, Pandas and Matplotlib. GitHub. https://github.com/farhansadeed/Python-COVID-19-Trade-Impact-Data-Analysis  
+
+Netherlands, S. (2023, 3 mei). More strikes but fewer strikers in 2022. Statistics Netherlands. https://www.cbs.nl/en-gb/news/2023/18/more-strikes-but-fewer-strikers-in-2022

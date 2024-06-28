@@ -3,5 +3,6 @@
 
 format: jb-book
 root: docs/home
+
 chapters:
-- file: docs/notebook
+- file: C:\Users\teunm\Documents\GitHub\InfoVis\docs\data_story.ipynb
